@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/coruja.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Concluir compra</title>
+</head>
+
+<body>
+
+    <div id="cabecalho"> 
+
+        <div class="menu">
+            <button id="botaomenu">Menu</button>
+        <ul class="dropdown-menu">
+            <li><a href="logado.html">Página Inicial</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+        </div>
+
+        <div class="dropdown">
+            <button id="botaocategorias">Categorias</button>
+        <ul class="dropdown-categ">
+            <li><a href="#">Ação</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li><a href="#">Ficção</a></li>
+            <li><a href="#">Suspense</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="nomepagcompra">Informações de compra</div>
+    <div id="imagemlivroselec"></div>
+
+    <div class="infor1">Prazo de entrega: 60 dias</div>
+
+    <div id="informes">
+        <div class="informe">Nome:</div></br>
+        <div class="informe">CPF:</div></br>
+        <div class="informe">Endereço:</div></br>
+        CEP:<div class="informe"><input class="textocep" type="text"></div>
+        Cidade:<div class="informe"></div>
+    </div>
+    <div id="conterbotao"> <a href="javascript: abrir();"><input id="botaoefetua" type="button" value="Efetuar compra"/></a>  </div>
+
+    <script type="text/javascript">
+   function fechar(){
+     document.getElementById('popup').style.display = 'none';
+   }
+
+   function abrir(){
+     document.getElementById('popup').style.display = 'block';
+     setTimeout ("fechar()", 3000);
+   }
+  </script>
+
+    <div id="popup" class="popup"> 
+     <p>Compra Efetuada!</p>
+   </div>
+
+   
+
+</body>
+
+</html>
